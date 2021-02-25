@@ -1,0 +1,6 @@
+services:
+    Google_Client:
+        class: Google_Client
+        calls:
+            - [setAuthConfig, ['%kernel.project_dir%/%env(GOOGLE_APPLICATION_CREDENTIALS)%']]
+
